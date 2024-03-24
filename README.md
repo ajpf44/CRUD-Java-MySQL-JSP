@@ -2,7 +2,7 @@
 
 This repository contains a CRUD (Create, Read, Update, Delete) application implemented in Java, utilizing MySQL for data storage and JSP for the web interface. The project was developed as an exercise as part of my coursework at Serratec/Senac.
 
-#Technologies Used:
+**Technologies Used**:
 
  -   JDK 21
  -   NetBeans IDE
