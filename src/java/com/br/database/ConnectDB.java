@@ -9,7 +9,8 @@ public class ConnectDB {
         String password = "1234";
         
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            //Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.err.println("Could not find the JDBC driver: " + e.getMessage());
             
