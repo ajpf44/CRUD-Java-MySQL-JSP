@@ -5,17 +5,19 @@
 package com.br.model.db;
 
 import com.br.database.ConnectDB;
+
 import java.sql.PreparedStatement;
 import java.sql.Connection;
-import java.util.ArrayList;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Consult {
+import java.util.ArrayList;
+
+public class Read {
     private final Connection connection;
     private final String query;
     private ArrayList<String[]> results = new ArrayList<>();
-    public Consult(String query){
+    public Read(String query){
         this.connection = ConnectDB.connect();      
         this.query = query;
     }
@@ -37,12 +39,13 @@ public class Consult {
                 results.add(row);
             }
             
-            
+            connection.close();
         }catch(SQLException err){
             System.err.println("Error on consulting table: " + err.getMessage());
             
             err.printStackTrace();
         }
+        
         
         return results;
     }
