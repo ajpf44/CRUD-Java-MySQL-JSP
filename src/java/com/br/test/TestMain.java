@@ -7,11 +7,17 @@ package com.br.test;
 import com.br.database.ConnectDB;
 import com.br.model.db.Read;
 import com.br.model.db.Create;
+import com.br.model.db.Update;
 
 public class TestMain {
     public static void main(String[] args){
-        testCreate();
+        //testCreate();
+        testUpdate();
         testConsult();
+    }
+    public static void testUpdate(){
+        Update update = new Update("Pear Phone", 400.0, "Um telefone paraguaio duvidoso");
+        update.update();
     }
     public static void testCreate(){
         Create create = new Create("Pear Phone",200.0,"Um telefone chines vagabundo");
