@@ -7,13 +7,20 @@ package com.br.test;
 import com.br.database.ConnectDB;
 import com.br.model.db.Read;
 import com.br.model.db.Create;
+import com.br.model.db.Delete;
 import com.br.model.db.Update;
 
 public class TestMain {
     public static void main(String[] args){
         //testCreate();
-        testUpdate();
+        //testUpdate();
+        testDelete();
         testConsult();
+    }
+    public static void testDelete(){
+        Delete delete = new Delete("Produto A");
+        
+        delete.delete();
     }
     public static void testUpdate(){
         Update update = new Update("Pear Phone", 400.0, "Um telefone paraguaio duvidoso");
