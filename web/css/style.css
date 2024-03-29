@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+form > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.submitButton {
+    width: 100%;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
