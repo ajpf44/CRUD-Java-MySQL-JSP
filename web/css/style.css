@@ -1,3 +1,6 @@
+:root {
+    font-size: 1.8rem;
+}
 body {
     margin: 0;
     padding: 0;
@@ -24,4 +27,13 @@ form > div {
 .input-container {
     display: flex;
     flex-direction: column;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, button{
+    font-size: 1rem;
 }
