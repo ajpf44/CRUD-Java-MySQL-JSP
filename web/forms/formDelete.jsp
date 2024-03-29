@@ -14,8 +14,8 @@
     </head>
     <body>
         <main>
-            <h2>Update</h2>
-            <form action="../pages/create.jsp">
+            <h2>Delete</h2>
+            <form action="../pages/delete.jsp">
                 <div>
                     
                     <div class="input-container">
@@ -23,17 +23,7 @@
                         <input type="text" name="name" id="name">
                     </div>
 
-                    <div class="input-container">
-                        <label for="price">Price</label>
-                        <input type="number" name="price" id="price">
-                    </div>
-
-                    <div class="input-container">
-                        <label for="about">About: </label>
-                        <textarea name="about" id="about" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <button class="submitButton"Update</button> 
+                    <button class="submitButton">Delete</button> 
                 </div>
             </form>
         </main> 

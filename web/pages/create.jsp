@@ -8,7 +8,6 @@
 <%@page import="java.sql.*" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-
 <%
     String name = request.getParameter("name");
     String priceStr = request.getParameter("price");
@@ -18,4 +17,6 @@
     
     Create create =  new Create(name, price, about);
     create.write();
+    
+    response.sendRedirect("read.jsp");
 %>
