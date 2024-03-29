@@ -15,9 +15,8 @@
     <body>
         <main>
             <h2>Update</h2>
-            <form action="../pages/create.jsp">
+            <form action="../pages/update.jsp">
                 <div>
-                    
                     <div class="input-container">
                         <label for="name">Name: </label>
                         <input type="text" name="name" id="name">
@@ -33,7 +32,7 @@
                         <textarea name="about" id="about" cols="30" rows="10"></textarea>
                     </div>
 
-                    <button class="submitButton"Update</button> 
+                    <button class="submitButton">Update</button> 
                 </div>
             </form>
         </main> 
